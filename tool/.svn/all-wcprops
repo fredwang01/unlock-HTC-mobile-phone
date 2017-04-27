@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/437201/AndroidPlatform/branches/unlock/htc/tool
+END
+fastboot.exe
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/437201/AndroidPlatform/branches/unlock/htc/tool/fastboot.exe
+END
+adb.exe
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/437201/AndroidPlatform/branches/unlock/htc/tool/adb.exe
+END
+AdbWinApi.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/437201/AndroidPlatform/branches/unlock/htc/tool/AdbWinApi.dll
+END
