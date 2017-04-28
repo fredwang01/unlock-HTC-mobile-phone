@@ -71,13 +71,11 @@ if __name__ == "__main__":
     header={"Content-type":"application/x-www-form-urlencoded", "Accept":"text/plain"}
     # 用户名随机生成
     user=generate_user()
-    print "generated user:", user
     # 密码也可以随便填
     password='xthzfrsHuAMd'
     # 使用mailcatch提供的邮件，注册账户信息
     mailcatch='@mailcatch.com'    
-    body=generate_body(user,password,mailcatch)
-    print "generated body:", body    
+    body=generate_body(user,password,mailcatch)   
     connhtc=httplib.HTTPConnection(htcdev)
     connhtc.request("POST", uri, body, header)
     rsphtc=connhtc.getresponse()
@@ -87,7 +85,6 @@ if __name__ == "__main__":
     # htcdev将向账户关联的mailcatch邮箱发送邮件，其中包含确认签名
     # 从mailchat中取回该确认签名
     #
-    print "GET from mailcatch."
     sign=""
     found=0
     mailcatch="mailcatch.com"
@@ -124,11 +121,9 @@ if __name__ == "__main__":
                 # length:36
                 if length >= 30:
                     sign=line[low:high]
-                    print "sign:", sign
                     found=1
                     break
         if found==1:
-            print "found register ack signature at mail number:", i
             f.close()
             break;
         f.close()
